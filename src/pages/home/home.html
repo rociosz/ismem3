@@ -6,6 +6,15 @@
 
 <ion-content padding>
   <h2>Rocio Soto</h2>
+
+  <button ion-button full (click)="tomarFoto()">
+    <ion-icon name="camera"></ion-icon>&nbsp;
+    Tomar foto
+  </button>
+
+  <img [src]="base64Image" *ngIf="base64Image
+  " alt="">
+
   <p>
     This starter project comes with simple tabs-based layout for apps
     that are going to primarily use a Tabbed UI.
